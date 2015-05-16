@@ -1,0 +1,37 @@
+{
+  "info" :
+  {
+    "name" : "QxVisJs",
+    "category" : [],
+
+    "summary" : "QxVisJs Contribution",
+    "description" : "This is a skeleton for a qooxdoo contribution.",
+
+    "homepage" : "http://contrib.qooxdoo.org/project/QxVisJs",
+
+    "license" : "LGPL/EPL",
+    "authors" :
+    [
+      {
+        "name" : "Carsten Harnisch",
+        "email" : "carsten@harnisch-consulting.com"
+      }
+    ],
+
+    "version" : "trunk",
+    "qooxdoo-versions": ["4.2"],
+
+    "download" : "",
+    "checksum" : ""
+  },
+
+  "provides" :
+  {
+    "namespace"   : "qxvisjs",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "contribution"
+  }
+}

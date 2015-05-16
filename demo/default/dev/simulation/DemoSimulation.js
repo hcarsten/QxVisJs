@@ -1,0 +1,33 @@
+/* ************************************************************************
+   Copyright:
+   License:
+   Authors:
+************************************************************************ */
+
+/**
+ * @ignore(simulator.unit.TestCase)
+ * @lint ignoreUndefined(simulator.unit.TestCase)  
+ */
+
+/**
+ * This class demonstrates how to define simulated interaction tests for your
+ * application. See the manual for details:
+ * {@link http://manual.qooxdoo.org/3.5/pages/development/simulator.html}
+ */
+qx.Class.define("qxvisjs.demo.simulation.DemoSimulation",
+{
+    extend : simulator.unit.TestCase,
+    members :
+    {
+        /** Check if a widget is present (part of the DOM) */
+        testButtonPresent : function() {
+            this.assertNotNull(this.getSimulation().getWidgetOrNull("qxh=qx.ui.form.Button"), "Button widget not present!");
+        },
+        /** Click a button and check if an alert box pops up */
+        testButtonClick : function()
+        {
+            this.getQxSelenium().qxClick("qxh=qx.ui.form.Button");
+            this.assertEquals("true", String(this.getQxSelenium().isAlertPresent()));
+        }
+    }
+});

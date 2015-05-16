@@ -1,0 +1,34 @@
+{
+  "info" : 
+  {
+    "name" : "QxVisJs Demo",
+
+    "summary" : "QxVisJs Demo",
+    "description" : "This is a demo for the QxVisJs contribution",
+    
+    "homepage" : "http://demo.qooxdoo.org/contrib/QxVisJs",
+
+    "license" : "LGPL/EPL",
+    "authors" : 
+    [
+      {
+        "name" : "Carsten Harnisch",
+        "email" : "carsten@harnisch-consulting.com"
+      }
+    ],
+
+    "version" : "trunk",
+    "qooxdoo-versions": ["4.2"]
+  },
+  
+  "provides" : 
+  {
+    "namespace"   : "qxvisjs.demo",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "application"
+  }
+}
+
